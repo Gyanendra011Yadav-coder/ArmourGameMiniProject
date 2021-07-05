@@ -18,4 +18,7 @@ public class Player1 {
                 "HEALTH -30\n"+
         "#-HEALTH LEFT-#-"+this.health);
     }
+    public void damageByGun2(){
+
+    }
 }
