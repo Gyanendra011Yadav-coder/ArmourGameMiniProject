@@ -19,7 +19,7 @@ public class Player1 {
         "#-HEALTH LEFT-#-"+this.health);
 
         if (this.health==0){
-            System.out.println("PLAYER DIED.");
+            System.out.println(getName()+" "+"IS,PLAYER1 DIED.");
         }
     }
     public void damageByGun2(){
@@ -29,7 +29,7 @@ public class Player1 {
                     "HEALTH -50\n"+
                     "#-HEALTH LEFT-#-"+this.health);
             if (this.health==0){
-                System.out.println("Player Died");
+                System.out.println(getName()+" "+"IS,Player Died");
             }
         }
     }
