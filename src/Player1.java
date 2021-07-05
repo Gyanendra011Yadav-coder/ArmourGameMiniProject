@@ -11,6 +11,8 @@ public class Player1 {
 
     public void damageByGun1(){
         this.health=30;
-
+        if (this.health<=0){
+            this.health=0;
+        }
     }
 }
