@@ -14,5 +14,8 @@ public class Player1 {
         if (this.health<=0){
             this.health=0;
         }
+        System.out.println("!! HITTED BY GUN-1" +
+                "HEALTH -30\n"+
+        "#-HEALTH LEFT-#-"+this.health);
     }
 }
