@@ -33,4 +33,28 @@ public class Player1 {
             }
         }
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getWeapons() {
+        return weapons;
+    }
+
+    public void setWeapons(String weapons) {
+        this.weapons = weapons;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }
