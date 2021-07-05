@@ -1,2 +1,3 @@
-public class Player2 {
+public class Player2 extends Player1{
+
 }
