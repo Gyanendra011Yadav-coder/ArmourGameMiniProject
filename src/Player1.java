@@ -6,7 +6,10 @@ public class Player1 {
     public Player1(String name, String weaponName , int health){
         this.name=name;
         this.weapons=weaponName;
-        this.health=health;
+
+        if(health<0 || health >100){
+            this.health=100;
+        }
     }
 
     public void damageByGun1(){
