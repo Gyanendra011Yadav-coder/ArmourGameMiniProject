@@ -8,4 +8,8 @@ public class Player1 {
         this.weapons=weaponName;
         this.health=health;
     }
+
+    public void damageByGun1(){
+
+    }
 }
