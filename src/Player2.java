@@ -37,6 +37,26 @@ public class Player2 extends Player1{
 
     @Override
     public void damageByGun2() {
-
+        if (armour) {
+            this.health=this.health-40;
+            if (this.health<=0){
+                this.health=0;
+            }
+            System.out.println("!!!ARMOUR IS ON!!!\n"+
+                    "HITTED BY GUN-1\n"+
+                    "HEALTH LEVEL:-"+ this.health );
+        }
+        if(!armour) {
+            this.health = this.health - 50;
+            if (this.health<=0){
+                this.health=0;
+            }
+            System.out.println("!!!ARMOUR IS ON!!!\n"+
+                    "HITTED BY GUN-1\n"+
+                    "HEALTH LEVEL:-"+ this.health );
+        }
+        if(this.health==0){
+            System.out.println(getName()+" "+"is Died!!!");
+        }
     }
 }
