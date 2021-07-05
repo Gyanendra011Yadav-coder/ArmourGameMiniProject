@@ -9,7 +9,7 @@ public class Player1 {
 
         if(health<0 || health >100){
             this.health=100;
-        }
+        }else this.health=health;
     }
 
     public void damageByGun1(){
