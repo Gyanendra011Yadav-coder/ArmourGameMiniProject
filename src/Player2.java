@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Player2 extends Player1{
     private int health;
     private boolean armour;
@@ -16,21 +18,23 @@ public class Player2 extends Player1{
             if (this.health<=0){
                 this.health=0;
             }
-            System.out.println("!!!ARMOUR IS ON!!!\n"+
+            System.out.println("!!!ARMOUR IS ON.SO,HEALTH REDUCED BY 20!!!\n"+
                     "HITTED BY GUN-1\n"+
                     "HEALTH LEVEL:"+ this.health );
+            System.out.println();
         }
         if(!armour) {
             this.health = this.health - 30;
             if (this.health<=0){
                 this.health=0;
             }
-            System.out.println("!!!ARMOUR IS ON!!!\n"+
+            System.out.println("!!!ARMOUR IS off.SO,HEALTH REDUCED BY 30.!!!\n"+
                     "HITTED BY GUN-1\n"+
                     "HEALTH LEVEL:"+ this.health );
+            System.out.println();
         }
         if(this.health==0){
-            System.out.println(getName()+" "+"is Died!!!");
+            System.out.println("!!!"+getName()+" "+"is Died!!!");
         }
 
     }
@@ -42,21 +46,24 @@ public class Player2 extends Player1{
             if (this.health<=0){
                 this.health=0;
             }
-            System.out.println("!!!ARMOUR IS ON!!!\n"+
+            System.out.println("!!!ARMOUR IS ON.SO,HEALTH IS REDUCED BY 40.!!!\n"+
                     "HITTED BY GUN-1\n"+
-                    "HEALTH LEVEL:-"+ this.health );
+                    "HEALTH LEVEL:-"+ this.health);
+            System.out.println();
         }
         if(!armour) {
             this.health = this.health - 50;
             if (this.health<=0){
                 this.health=0;
             }
-            System.out.println("!!!ARMOUR IS ON!!!\n"+
+            System.out.println("!!!ARMOUR IS OFF.SO,HEALTH IS REDUCED BY,50!!!\n"+
                     "HITTED BY GUN-1\n"+
                     "HEALTH LEVEL:-"+ this.health );
+            System.out.println();
         }
         if(this.health==0){
             System.out.println(getName()+" "+"is Died!!!");
+            System.out.println();
         }
     }
 }
