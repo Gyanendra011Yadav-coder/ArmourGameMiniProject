@@ -40,6 +40,11 @@ public class Player2 extends Player1{
     }
 
     @Override
+    public void heal() {
+        super.heal();
+    }
+
+    @Override
     public void damageByGun2() {
         if (armour) {
             this.health=this.health-40;
