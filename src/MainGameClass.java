@@ -99,7 +99,7 @@ public class MainGameClass {
             System.out.println("TYPE MISMATCH");
         }
         Player2 player2 = new Player2("John",gunName,100,armourOnOff);
-        System.out.println("HEALTH LEVEL OF THE PLAYER-2 IS"+player2.getHealth());
+        System.out.println("HEALTH LEVEL OF THE PLAYER-2 IS"+" "+player2.getHealth());
 
     }
 }
