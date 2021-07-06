@@ -1,5 +1,15 @@
+import java.util.Scanner;
+
 public class MainGameClass {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("||==>>Welcome To Armour Game<<==||");
+        System.out.println("ENTER THE NAME OF PLAYER 1st:");
+        String playerName1=sc.nextLine();
+        System.out.println("ENTER THE NAME OF PLAYER 2nd:");
+        String playerName2=sc.nextLine();
+
+
         Player1 player = new Player1("Gyan","AWM",100);
 //        System.out.println(player.getName());
 //        System.out.println(player.getWeapons());
