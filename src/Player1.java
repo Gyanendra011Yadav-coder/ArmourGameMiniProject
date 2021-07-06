@@ -44,6 +44,7 @@ public class Player1 {
             System.out.println();
         }else {
             this.health=100;
+            System.out.println("HEALED SUCCESSFULL,HEALTH REACHES"+this.health);
         }
         }
 
