@@ -8,6 +8,10 @@ public class MainGameClass {
         String playerName1=sc.nextLine();
         System.out.println("ENTER THE NAME OF PLAYER 2nd:");
         String playerName2=sc.nextLine();
+        System.out.println("Hello,==>>"+playerName1+" "+",&,"+playerName2+"\n" +
+                "Armour Game Welcomes You, Whole Heartedly\n" +
+                "So,Let's Rolling In To Game=====!!!!!!");
+
 
 
         Player1 player = new Player1("Gyan","AWM",100);
