@@ -38,6 +38,14 @@ public class Player1 {
                 System.out.println();
             }
         }
+        public void heal(){
+        if (this.health<=0){
+            System.out.println("!!!"+getName()+"is Died"+"!!!");
+            System.out.println();
+        }else {
+            this.health=100;
+        }
+        }
 
 
     public String getName() {
