@@ -5,5 +5,8 @@ public class MainGameClass {
 //        System.out.println(player.getWeapons());
 //        System.out.println(player.getHealth());
         player.damageByGun1();
+        player.damageByGun1();
+        player.damageByGun2();
+        player.damageByGun2();
     }
 }

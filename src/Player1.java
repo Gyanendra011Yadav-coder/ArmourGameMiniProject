@@ -18,23 +18,24 @@ public class Player1 {
             this.health=0;
         }
         System.out.println("!! HIT  BY GUN-1 HEALTH REDUCES BY 30 !!!\n"+
-        "#-HEALTH LEFT-#-"+this.health);
+        "#-HEALTH LEFT-#"+this.health);
 
-        if (this.health==0){
-            System.out.println(getName()+" "+"IS,PLAYER1 DIED.");
+        if (this.health<0){
+            System.out.println(getName()+" "+",PLAYER1 DIED.");
         }
     }
     public void damageByGun2(){
-        this.health=this.health-50;
-        if (this.health<=0){
+        this.health-=50;
+        if (this.health<=0) {
             System.out.println("!! HIT  BY GUN-2" +
-                    "HEALTH -50\n"+
-                    "#-HEALTH LEFT-#-"+this.health);
-            if (this.health==0){
-                System.out.println(getName()+" "+"IS,Player Died");
+                    "HEALTH -50\n" +
+                    "#-HEALTH LEFT-#" + this.health);
+        }
+            if (this.health<0){
+                System.out.println(getName()+" "+",Player Died");
             }
         }
-    }
+
 
     public String getName() {
         return name;
