@@ -50,8 +50,8 @@ public class MainGameClass {
         }else {
             System.out.println("TYPE MISMATCH");
         }
-        Player1 player = new Player1(playerName1,gunName,100);
-        System.out.println("HEALTH OF PLAYER-1 IS:-"+player.getHealth());
+        Player1 player1 = new Player1(playerName1,gunName,100);
+        System.out.println("HEALTH OF PLAYER-1 IS:-"+player1.getHealth());
 
         System.out.println();
         System.out.println();
@@ -100,6 +100,35 @@ public class MainGameClass {
         }
         Player2 player2 = new Player2("John",gunName,100,armourOnOff);
         System.out.println("HEALTH LEVEL OF THE PLAYER-2 IS"+" "+player2.getHealth());
+        System.out.println();
+        System.out.println();
+        System.out.println("LET'S START:");
+        System.out.println();
+        System.out.println();
+        System.out.println("WHICH PLAYER DO YOU WANT TO GIVE A CHANCE,1st:-**ENTER 1 OR 2**");
+        int chanceOfPlayer=sc.nextInt();
+        if (chanceOfPlayer==1){
+            System.out.println("YOU HAVE SUCCESSFULLY CHOOSED PLAYER-1."+playerName1);
+            System.out.println("DO YOU WANT TO ATTACK PLAYER-2 BY GUN OR BY GUN 2:**ENTER 1 OR 2**");
+                int attackGun= sc.nextInt();
+                if (attackGun==2){
+                    player2.damageByGun2();
+                }else{
+                    player2.damageByGun1();
+                }
+        }else if (chanceOfPlayer==2){
+            System.out.println("YOU HAVE SUCCESSFULLY CHOOSED PLAYER-2."+playerName2);
+            System.out.println("DO YOU WANT TO ATTACK PLAYER-1 BY GUN OR BY GUN 2:**ENTER 1 OR 2**");
+            int attackGun= sc.nextInt();
+            if (attackGun==2){
+                player1.damageByGun2();
+            }else{
+                player1.damageByGun1();
+            }
+
+        }else {
+            System.out.println("ENTER CORRECT INPUT.");
+        }
 
     }
 }
