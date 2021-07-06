@@ -27,24 +27,24 @@ public class Player1 {
         }
     }
     public void damageByGun2(){
-        this.health-=50;
+        this.health=this.health-50;
         if (this.health<=0) {
             System.out.println("!!! HIT  BY GUN-2 HEALTH REDUCED BY:50 !!!\n" +
                     "###=>HEALTH_LEFT<=###" + this.health);
             System.out.println();
         }
             if (this.health<0){
-                System.out.println(getName()+" "+" ,is Died");
+                System.out.println(getName()+""+",is Died");
                 System.out.println();
             }
         }
         public void heal(){
         if (this.health<=0){
-            System.out.println("!!!"+getName()+"is Died"+"!!!");
+            System.out.println("!!!"+getName()+" "+"is Died,Can Not Be Revived."+"!!!");
             System.out.println();
         }else {
             this.health=100;
-            System.out.println("HEALED SUCCESSFULL,HEALTH REACHES"+this.health);
+            System.out.println("HEALED SUCCESSFULL,HEALTH REACHES"+" "+this.health);
         }
         }
 
