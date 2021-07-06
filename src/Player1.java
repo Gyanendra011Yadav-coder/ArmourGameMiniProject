@@ -3,22 +3,21 @@ public class Player1 {
     private String weapons;
     private int health;
 
-    public Player1(String name, String weaponName , int health){
+    public Player1(String name, String weaponName , int Health){
         this.name=name;
         this.weapons=weaponName;
 
-        if(health<0 || health >100){
+        if(Health<0 || Health >100){
             this.health=100;
-        }else this.health=health;
+        }else this.health=Health;
     }
 
     public void damageByGun1(){
-        this.health=30;
+        this.health=this.health-30;
         if (this.health<=0){
             this.health=0;
         }
-        System.out.println("!! HIT  BY GUN-1" +
-                "HEALTH -30\n"+
+        System.out.println("!! HIT  BY GUN-1 HEALTH REDUCES BY 30 !!!\n"+
         "#-HEALTH LEFT-#-"+this.health);
 
         if (this.health==0){
@@ -26,7 +25,7 @@ public class Player1 {
         }
     }
     public void damageByGun2(){
-        this.health=50;
+        this.health=this.health-50;
         if (this.health<=0){
             System.out.println("!! HIT  BY GUN-2" +
                     "HEALTH -50\n"+
